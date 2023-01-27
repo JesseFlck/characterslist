@@ -31,23 +31,25 @@ const Charac = () => {
 
     return (
         <>
-        <div className="charac" key={charac.id}>
+        <div className="charac" key={charac._id}>
             {charac.map(element => {
                 //const del = <FontAwesomeIcon icon={faTrash} />
                 //const edit = <FontAwesomeIcon icon={faEdit} />
                 const color = element.color
                 
                 return (
-                    <div className="characBody" key={`charac-${element._id}`}>
-                        <div className="imgCharac">
-                            <img src={element.avatar} alt="" />
+                    <a href={`./${element.firstName}`}>
+                        <div className="characBody" key={`charac-${element._id}`}>
+                            <div className="imgCharac">
+                                <img src={element.avatar} alt="" />
+                            </div>
+                            <div className='characName' style={{color}}>
+                                <h2 className='characFirstName'>{element.firstName}</h2>
+                                <h3 className='characSecondName'>{element.secondName}</h3>
+                                <h2 className='characLastName'>{element.lastName}</h2>
+                            </div>
                         </div>
-                        <div className='characName' style={{color}}>
-                            <h2 className='characFirstName'>{element.firstName}</h2>
-                            <h3 className='characSecondName'>{element.secondName}</h3>
-                            <h2 className='characLastName'>{element.lastName}</h2>
-                        </div>
-                    </div>
+                    </a>
                 )
             })}
         </div>
