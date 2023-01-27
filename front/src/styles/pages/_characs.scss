@@ -1,0 +1,40 @@
+.characBody {
+    width: 70%;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    //margin: auto;
+    margin-top: 20px;
+    //background-color: rgb(39, 39, 39);
+    background-image: url('https://zupimages.net/up/23/04/szd2.jpg');
+    background-position: right;
+    font-family: $NameFont;
+    padding-right: 25px;
+    /*filter: grayscale(60%);
+    -webkit-filter: grayscale(60%);
+    transition: filter 500ms linear;
+
+    :hover {
+        filter: grayscale(0);
+        -webkit-filter: grayscale(0);
+        cursor: pointer;
+    }*/
+
+
+    .imgCharac {
+        min-width: 20%;
+    }
+
+    
+    .characName {
+        display: flex;
+        flex-direction: column;
+        margin-top: auto;
+        margin-bottom: auto;
+        text-align: right;
+
+        .characFirstName {
+            font-size: 30px;
+        }
+    }
+}

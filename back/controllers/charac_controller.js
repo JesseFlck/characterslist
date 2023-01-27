@@ -36,6 +36,7 @@ exports.newCharac = (req, res, next) => {
             birthPlace: req.body.birthPlace,
             localisation: req.body.localisation,
             occupation: req.body.occupation,
+            color: req.body.color,
             faceclaim: req.body.faceclaim,
             avatar: characAvat,
         };

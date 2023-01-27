@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
+
+$NameFont: 'Aboreto', sans-serif;
+
+
+body {
+    max-width: 100%;
+    background-color: #333333;
+}
+
+
+img { 
+    object-fit:cover;
+}
+
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover{
+        font-weight: bold;
+    }
+}

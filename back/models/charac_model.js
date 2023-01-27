@@ -19,6 +19,7 @@ const Charac = mongoose.Schema ({
     localisation: { type: String, required: true},
     occupation: { type: String, required: true},
     faceclaim: { type: String, required: true},
+    color: { type: String, required: true},
     avatar: {type: String, required: false},
     banniere: {type: String, required: false }
 });
