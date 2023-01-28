@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const path = require('path');
 const characRoutes = require('./routes/charac_route');
+const adminRoutes = require('./routes/admin_route');
 
 
 const express = require('express');
@@ -32,6 +33,8 @@ app.use((req, res, next) => {
 
 
 app.use('/api/characs', characRoutes);
+
+app.use('/api/auth', adminRoutes);
 
 app.use('/images', express.static(path.join(__dirname, 'images')));
 

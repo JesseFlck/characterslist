@@ -38,7 +38,7 @@ const Charac = () => {
                 const color = element.color
                 
                 return (
-                    <a href={`./${element.firstName}`}>
+                    <a href={`api/characs/${element._id}`}>
                         <div className="characBody" key={`charac-${element._id}`}>
                             <div className="imgCharac">
                                 <img src={element.avatar} alt="" />

@@ -10,7 +10,7 @@ const [perso, setPerso] = useState({});
     //const navigate = useNavigate()
 
     function getperso() {
-        axios.get(`http://localhost:3000/api/characs/${id}`, {
+        axios.get('http://localhost:3000/api/characs/' + id, {
             headers: {
                 'Content-Type': 'application/json',
                 //authorization: `Bearer ${parseToken.token}`
